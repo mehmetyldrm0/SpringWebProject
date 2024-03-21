@@ -24,7 +24,7 @@ public class UserController {
         return userService.saveUserService(newUser);
     }
     @GetMapping("/{userId}")
-    public User getOneUser(@PathVariable Long userId, @RequestBody User newUser) {
+    public User getOneUser(@PathVariable Long userId) {
         return userService.getOneUserById(userId);
     }
 
